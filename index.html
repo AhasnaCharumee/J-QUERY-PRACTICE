@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J query day 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"></head>
+    <style>
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+                    }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+           margin-top: 10px;
+        }
+    </style>
+<body>
+    <div class="circle"></div>
+    
+    <div class="square"></div>
+    
+    <div class="square"></div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+$(".circle").click(function(){
+alert("You clicked the circle!");
+});
+
+$("div").click(function(){
+alert("You clicked a all!");
+});
+</script>
+
+</body>
+</html>
