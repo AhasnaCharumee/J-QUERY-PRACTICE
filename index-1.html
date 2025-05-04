@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery-2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"></head>
+</head>
+<style>
+    .circle{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(165, 76, 124);
+        border-radius: 50%;
+    }
+    .iframe{
+        width: 100%;
+        height: 500vh;
+        border: none;
+    }
+</style>
+<body>
+    <div class="circle"></div>
+    <h1>click this circle</h1>
+    <iframe src="https://www.pexels.com/"></iframe>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(".circle").click(function(){
+            $("h1").html("You clicked the circle!");
+            $(".circle").css("background-color", "green");
+        });
+        $(".circle").hover(function(){
+        //     $("h1").css("background-color", "yellow");
+        // $(".circle").css("background-color", "blue");
+        $("iframe").attr("src", "https://www.pexels.com/");
+       
+        
+        });
+        </script>
+
+</body>
+</html>
